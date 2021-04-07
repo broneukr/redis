@@ -14,6 +14,6 @@ module.exports = async (req, res) => {
   redis.quit()
 
   res.json({
-    body: result,
+    body: result.body,
   })
 }
