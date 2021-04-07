@@ -28,6 +28,7 @@ function Home() {
       )
   }
 
+  
   const vote = (event, title) => {
     const requestOptions = {
       method: 'POST',
