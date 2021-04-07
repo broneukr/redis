@@ -1,5 +1,5 @@
 {
   "routes": [	
-  	{ "src": "/(.*)", "methods": ["PUT"], "dest": "/api/PUT?o=$1" }
+  	{ "src": "/(.*)", "methods": ["PUT"], "dest": "/pages/api/PUT?o=$1" }
   ]
 }
