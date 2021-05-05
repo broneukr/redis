@@ -4,6 +4,7 @@ module.exports = async (req, res) => {
   let redis = getRedis()
   const body = req
   const title = body['title']
+  console.log(title)
   let ip = req.headers['x-forwarded-for'] || req.headers['Remote_Addr'] || 'NA'
   let c = ip === 'NA' ? 1 : await redis.sadd('s:' + title, ip)
   if (c === 0) {
